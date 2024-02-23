@@ -1,0 +1,33 @@
+/*
+EM - Se baseia no elemento PAI mais proximo dele.
+1em = 100% do tamanho do elemento PAI mais proximo dele.
+0.5em = 50% do tamanho do elemento PAI mais proximo dele.
+2em = 200% do tamanho do elemento PAI mais proximo dele
+
+REM - Se baseia no elemento root do documento, (no caso o HTML) tem como mudar esse elemento ROOT?
+1rem = 100% do tamanho do elemento root
+2rem = 200% do tamanho do elemento root
+0.5rem = 50% do tamanho do elemento root
+
+
+VW - View port width - é a area visivel(horizontal) do navegador
+100vw - 100% da area visivel do navegador
+50vw - 50% da area visivel do navegador
+
+VW - View port height - é a area visisel (vertical) do navegador
+100vh - 100% da area visivel do navegador
+50vh - 50% da area visivel do navegador
+Muito usado para fazer landing page
+
+% - Porcetagem - é baseado no elemento PAI
+Se o pai tem 500px de largura
+50% seria 250 pixel de largura
+
+vmin - Porcetagem relativa ao menor tamanho do vmin Ex:
+1vmin = 1% do menor tamanho do vmin
+2vmin = 2% do menor tamanho do vmin
+
+vmin - Porcetagem relativa ao maior tamanho do vmin Ex:
+1vmin = 1% do maior tamanho do vmin
+2vmin = 2% do maior tamanho do vmin
+*/
