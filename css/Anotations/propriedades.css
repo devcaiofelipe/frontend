@@ -1,0 +1,245 @@
+.geral {
+  /* altera o tipo de cursor */
+  cursor: pointer;
+  /* Cor do texto */
+  color: red;
+  /* altura do elemento */
+  height: 100px;
+  /* define a altura maxima do elemento */
+  max-height: 100px;
+  /* largura do elemento */
+  width: 100px;
+  /* define o nivel de transparencia, vai de 0.1 a 1*/
+  opacity: 1;
+  /* define a largura maxima do elemento */
+  max-width: 100px;
+  /* cor do background */
+  background: red;
+  /* caminho ou url da imagem para por no fundo do backas */
+  background-image: url(path/url);
+  /* tamanho da imagem no background se auto ajusta ou nao */
+  background-size: contain;
+  /* se o fundo vai se repetir ou nao */
+  background-repeat: no-repeat;
+  /* a posicao que a imagem vai ficar no fundo */
+  background-position: center;
+  /* define a sombra na box sentindo horario 
+     -> deslocamento da sombra para direita
+     -> deslocamento da sombra para baixo
+     -> blur (espalhamento da sombra)
+     -> cor da sombra
+  */
+  box-shadow: 2px 2px 10px black;
+  /* 
+  define a sombra no texto, podemos passar mais de uma sombra, passando virgula
+   */
+  text-shadow: 1px 2px red;
+  /*  PESQUISAR */
+  box-sizing: border-box;
+  /* controla o conteudo do elemento caso saia do elemento 
+     hidden -> mostra apenas o conteudo que cabe dentro do elemento pai
+     scroll -> vai criar uma barra de rolagem dentro do elemento para que seja possivel ver todo conteudo
+     auto -> apenas cria o scroll caso seja necessario
+     ela só funciona, se especificar uma altura para o elemento
+  */
+  overflow: auto;
+  /* flutua o elemento para algum canto */
+  float: left;
+  /* limpa a flutuacao */
+  clear: both;
+  /* faz com que um elemento que quebra linha, fique tudo em uma linha só */
+  white-space: nowrap;
+  /* quando o texto passa do tamanho do elemento, ele adicionar um reticencias ao final do texto */
+  text-overflow: ellipsis;
+}
+
+.border {
+  /* propriedades de borda.
+    adiciona borda ao elemento, 
+    tipos solid, dotted, dashed, double, groove, ridge, inset, outset, none, hidden
+  */
+  border: 1px solid black;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.margin {
+  /* cria uma margem em branco no elemento selecionado */
+  margin: 50px;
+  /* em sentido horario */
+  margin: 50px 50px 50px 50px;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+
+.padding {
+  /* aumenta o espacamento interno do elemento */
+  padding: 50px;
+  /* sem sentido horario */
+  padding: 50px 50px 50px 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+.text {
+  /* alinhar o texto ao centro 
+     mais comuns center, left, right, justify
+  */
+  text-align: center;
+  /* para alterar comportamentos no texto 
+    line-through -> texto riscado
+    none -> retira o sublinhado
+    overline -> sublinha em cima do texto
+    underline -> sublinha o texto
+  */
+  text-decoration: line-through;
+  /* alinha o texto ao centro */
+  text-align: center;
+  /* usado para formatar o texto
+    capitalize -> primeira letra maiuscula de cada palavra
+    uppercase -> tudo maiusculo
+    lowercase -> tudo minusculo
+  */
+  text-transform: capitalize;
+  /* aumenta uma quantidade de pixel ao inicio do paragrafo */
+  text-indent: 50px;
+  /* controla o espacamento das letras */
+  letter-spacing: 10px;
+  /* controla o espacamento entre as palavras do paragrafo */
+  word-spacing: 50px;
+  /* controla o espacamento entre as linhas, usa-se numero decimal */
+  line-height: 0.5;
+}
+
+.font {
+  /* escolhe o estilo da fonte */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* escolhe o tamanho da fonte  */
+  font-size: 20px;
+  /* escolhe se a fonte fica inclinada ou nao */
+  font-style: italic;
+  /* escolhe a grossura da fonte */
+  font-weight: 100;
+}
+
+.display {
+  /*
+    Display Block -> div, section, p, h1, h2, ul, li, article, form, footer
+    Ocupa 100% da largura do elemento pai
+    Ocupa sempre a sua própria linha e é posicionado abaixo do elemento anterior
+    A altura é definida de acordo com o conteúdo interno
+    É possível definir Width e Height
+    Você pode definir valores de margin-top e margin-bottom
+
+    Display Inline -> a, span, b, i, img
+    Ocupa a largura total do seu conteúdo apenas
+    Um elemento inline após outro elemento inline ocupam a mesma linha
+    Não é possível definir Width e Height
+    Não é possível definir valores de margin-top e margin-bottom
+    Ao aplicar o float, automaticamente eles assumem características de display block
+    Se aplicado dentro de um texto, irá seguir o fluxo do conteúdo 
+  */
+  /* mais comuns sao block, inline, inline-block, none, flex, grid */
+  display: block;
+}
+
+.position {
+  /* 
+  onde vc quer posicionar o elemento na tela 
+  usando ele voce libera as propriedades
+  z-index, bottom, right, left, top
+  relative -> baseado ao lugar que ele nasceu de origem, vc pode passar outras props
+  como left, right, bottom, top
+  fixed -> vai ficar static na posição que voce definir na tela
+  absolute -> vai ficar relativo ao elemento HTML pai
+  porem o elemento PAI precisa ter uma position diferente de static
+  se nao, ele irá procurar o elemento PAI do elemento PAI sucessivamente
+  e se alinhara baseado no primeiro que encontrar algum diferente de static
+  sticky -> fica grudada no elemento PAI se tiver barra de rolagem
+  */
+  position: fixed;
+}
+
+.especificidade {
+  /* 
+  Do maior para o menor
+  #id > tag.classe > .classe > tag 
+  em caso de mesmas tags, prevalece o ultimo computado
+  O estilo na TAG
+  O Id
+  A Classe
+  O css na tag style dentro do proprio HTML
+  O arquivo css separado
+  */
+}
+
+.display-flex {
+  display: flex;
+  /* 
+  define a direção do elemento, se vai ser em row ou column 
+  row -> os elementos ficam em linha (parecido com inline)
+  column -> os elementos ficam em coluna (parecido com block)
+  row-reverse -> os elementos ficam em linha porem de forma reversa.
+  column-reverse -> os elementos ficam em coluna porem de forma reversa.
+  */
+  flex-direction: column;
+  /* 
+  vem por padrao como nowrap,
+  nowrap -> significa "embrulhar" logo nowrap (nao embrulhar o elemento dentro da div pai)
+  significa que nao vai levar em consideração o tamanho(altura ou largura) da div pai, 
+  caso o elemento seja maior que as extremidades vai sair para fora
+  wrap -> caso o elemento n caiba dentro do elemento pai, vai ser jogado para baixo, mas continuar dentro do elemento pai
+  */
+  flex-wrap: nowrap;
+  /* atalho para flex-direction e flex-wrap */
+  flex-flow: row nowrap;
+  /* 
+  by default flex-start 
+  flex-start -> alinha os elementos ao comeco do elemento pai
+  flex-end -> alinha os elementos ao final do elemento pai
+  center -> alinha no centro do elemento pai
+  space-between -> alinha os items tendo um espaco igual entre eles
+  space-around -> alinha os itens tendo um espaco igual ao redor do elemento
+  */
+  justify-content: flex-start;
+  /* 
+  by default stretch
+  define que CADA ELEMENTO SEPARADAMENTE vai ocupar todo o tamanho do elemento pai
+  */
+  align-items: center;
+  /* define onde o elemento como um todo da div estara alinhado */
+  align-content: center;
+  /*
+  USADO NAS DIV FILHO QUE TEM O PAI DISPLAY FLEX
+  1 -> significa que as divs crescerao de forma uniforme
+  */
+  flex-grow: 1;
+}
+
+/*
+Smartphones (600px para baixo)
+@media only screen and (max-width: 600px) {...}
+
+Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) /
+@media only screen and (min-width: 600px) {...}
+
+Dispostivos Médios (Tablets deitados, 768px para cima)
+@media only screen and (min-width: 768px) {...}
+
+Dispostivos Largos (laptops/desktops, 992px para cima)
+@media only screen and (min-width: 992px) {...}
+
+Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima)
+@media only screen and (min-width: 1200px) {...}
+*/

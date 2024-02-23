@@ -1,0 +1,191 @@
+/*
+Seletor universal
+Com este seletor eu digo
+"Todos as Tag da pagina terão font-size 50px"
+*/
+* {
+  font-size: 50px;
+}
+
+/*
+Seletor por TAG HTML:
+Com este seletor eu digo
+"Todos as TAG P da pagina terão cor "red""
+*/
+p {
+  color: red;
+}
+
+/*
+Selecionando varios elementos
+Com esta seleção eu digo
+Todas as tags H1 e P terão color red e text-align center
+*/
+
+h1, p {
+  color: red;
+  text-align: center;
+}
+
+/*
+Seletor de hierarquia
+Com este seletor eu digo
+Todo elemento P que esta dentro de uma SECTION
+que esta dentro de uma DIV que esta dentro do body
+terá color red
+*/
+
+body div section p {
+  color: red;
+}
+
+/*
+Selecionando o mesmo estilo para duas Hierarquias
+Com este seletor eu digo
+Todo elemento P que esta dentro de uma SECTION
+que esta dentro de uma DIV que esta dentro do BODY
+terá font-size 30px
+e todo elemento H1 tera font-size 30px tambem
+(mesmo que fora dessa hierarquia)
+caso queira todos um P e H1s dentro dessa hierarquia teria que ser
+body div section p,
+body div section h1 {
+  font-size: 30px;
+}
+*/
+
+body div section p,
+body div section p, h1 {
+  font-size: 30px;
+}
+
+/*Seletor de irmao
+Com este seletor eu digo
+Todo elemento PRIMEIRO P que for irmao de um H1
+dentro de algum elemento que tenha a classe .pai
+tera color red
+*/
+.pai h1+p {
+  color: red;
+}
+
+
+/*Seletor de irmao
+Com este seletor eu digo
+Todo elemento P que seja irmao de um H1
+dentro de algum elemento que tenha a classe .pai
+tera color red
+*/
+.pai h1~p {
+  color: red;
+}
+
+/*Seletor de irmao
+Com este seletor eu digo
+Todo elemento que contem a classe .dois
+que seja irmao de um elemento que tenha a classe .um
+tera color red
+*/
+.pai .um~.dois {
+  color: red;
+}
+
+/*
+Voce tbm pode criar seu proprio atributo
+elementos que contem o atributo chamado meu-atributo
+tera color red;
+*/
+[meu-atributo] {
+  color: red;
+}
+
+/*
+Voce tbm pode criar seu proprio atributo e por valores que voce criou
+elementos que contem o atributo chamado meu-atributo
+com valor X
+tera color red;
+*/
+[meu-atributo="X"] {
+  color: red;
+}
+
+/*
+Seletor por Classe
+Com este seletor eu digo
+Todos os elementos que tiverem a classe "class-name"
+terá o estilo text-align center
+*/
+.class-name {
+  text-align: center;
+}
+
+/*
+Selecionando TAG a partir da classe
+Com esta seleção eu digo
+Todo TAG H2 que estiver dentro de um elemento com a classe class-name
+tera o estilo background blue
+*/
+.class-name h2 {
+  background: blue;
+}
+
+
+/*
+Selecionando TAG a partir da classe dentro de outra classe
+Com esta seleção eu digo
+Toda elemento com a classe .heading que estiver dentro de algum elemento com a classe .class-name
+tera o estilo background blue
+*/
+.class-name .heading {
+  background: blue;
+}
+
+/*
+Selecionando elementos que contenham as 2 classes
+Com esta seleção eu digo
+Todo elemento que contem a tanto a classe .class-father quanto a classe .class-daughter
+tera o estilo background blue
+*/
+.class-father.class-daughter {
+  background: blue;
+}
+
+/*
+Com esta seleção eu digo
+Todo elemento que contem a classe .class-daughter
+que seja filho DIRETO de um elemento que contem a classe .class-father
+tera o estilo background blue
+*/
+.class-father > .class-daughter {
+  background: blue;
+}
+
+/*
+Selecionando TAG a partir da classe dentro de outra classe
+Com esta seleção eu digo
+Todo elemento H2 com uma classe .heading que estiver dentro de algum elemento com a classe .class-name
+tera o estilo background blue
+*/
+.class-name h2.heading {
+  background: blue;
+}
+
+/*
+Selecionando TAG a partir da classe dentro de outra classe
+Com esta seleção eu digo
+Toda elemento H2 que tem a classe .heading que estiver dentro de uma div com a classe .class-name 
+tera o estilo background blue
+*/
+div.class-name h2.heading {
+  background: blue;
+}
+
+/*
+Seletor por ID
+Com este seletor eu digo
+O elemento que contem o ID "id-name"
+terá o estilo background black
+*/
+#id-name {
+  background: black;
+}

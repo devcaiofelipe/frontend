@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+ul {
+  list-style: none;
+  background: black;
+  padding: 0;
+  margin: 0; 
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a, dropbtn {
+  display: inline-block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background: red;
+}
+
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  width: 150px;
+}
+
+.dropdown-content a {
+  color: black;
+  display: block;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.dropdown-content a:hover {
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
