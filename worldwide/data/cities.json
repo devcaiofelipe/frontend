@@ -1,40 +1,52 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": 73930385
-    },
-    {
-      "cityName": "Madrid",
+      "id": "0502",
+      "cityName": "Fresno El Viejo",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
+      "date": "2024-03-20T10:41:53.374Z",
       "notes": "",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      },
-      "id": 17806751
+        "lat": "41.16211393939692",
+        "lng": "-5.119628906250001"
+      }
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
+      "id": "b5bd",
+      "cityName": "Bay of Biscay",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2024-03-20T11:16:51.578Z",
+      "notes": "",
       "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
-      },
-      "id": 98443197
+        "lat": "43.45291889355465",
+        "lng": "-1.7578125000000002"
+      }
+    },
+    {
+      "id": "e566",
+      "cityName": "Tersannes",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2024-03-20T11:16:54.681Z",
+      "notes": "",
+      "position": {
+        "lat": "46.28622391806708",
+        "lng": "1.1425781250000002"
+      }
+    },
+    {
+      "id": "6f5e",
+      "cityName": "Villeneuve-en-Perseigne",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2024-03-20T11:16:56.183Z",
+      "notes": "",
+      "position": {
+        "lat": "48.45835188280866",
+        "lng": "0.17578125"
+      }
     }
   ]
 }
